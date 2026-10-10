@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUZ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="petalos"></canvas>
+  <audio id="musica" loop src="musica/WhatsApp Audio 2026-10-09 at 8.07.03 PM.mp4"></audio>
+  <button id="btnMusica" class="redondo" hidden aria-label="Música">🎵</button>
+
+  <!-- PARTE 1: BIENVENIDA -->
+  <section id="parte1" class="parte activa">
+    <p class="pre">Alguien especial</p>
+    <h1 id="nombre">LUZ MILAGROS</h1>
+    <p class="adorno">✿</p>
+    <p class="sub">Te preparé un pequeño jardín</p>
+    <button id="btnEntrar" class="btn">Entrar al jardín</button>
+  </section>
+
+  <!-- PARTE 2: JARDIN -->
+  <section id="parte2" class="parte">
+    <svg id="jardin" aria-hidden="true"></svg>
+    <h2 id="tituloJardin">Toca la pantalla y planta una flor 🌷</h2>
+    <button id="btnCarta" class="btn" hidden>MENSAJE</button>
+  </section>
+
+  <!-- PARTE 3: CARTA -->
+  <section id="parte3" class="parte">
+    <div class="carta"><p id="textoCarta"></p></div>
+    <div class="controles">
+      <button id="btnVolver" class="btn chico">◀ Volver al jardín</button>
+      <button id="btnInicio" class="btn chico">Volver a empezar</button>
+    </div>
+  </section>
+
+  <div id="puntos"></div>
+  <script src="script.js"></script>
+</body>
+</html>
